@@ -1,0 +1,384 @@
+/* Font for entire page */
+li, h1, h2, h3, h4, p, form{
+    font-family: 'Montserrat', sans-serif;
+    color:#E7DFDD;
+}
+
+/* Get rid of margins on both sides of page */
+*{
+    margin-left:0px;
+    margin-right:0px;
+}
+
+/* Site Header and Navigation Bar Styling here */
+.site_header{
+    width:100%;
+    background-color:#0E0B16;
+    position:fixed;
+    top:0px;
+}
+
+.logo, li{
+    color:#E7DFDD;
+    display:inline;
+}
+
+.nav_bar{
+    float:right;
+}
+
+a {
+    text-decoration: none;
+    color: #E7DFDD;
+}
+
+a:hover{
+    color:#A239CA;
+}
+
+li{
+    float:left;
+    margin: 0 50px 0 50px;
+}
+
+.sub_section{
+    display:inline-block;
+}
+
+/* Center-align all sub-section titles and About Me Text */
+.section_title, .about_me_text, .about_me_name, .about_me_title{
+    text-align: center;
+}
+
+/* Styling for About Me Section */
+.profile_pic{
+    border-radius: 40%;
+    display:block;
+    margin: 0 auto 0 auto;
+}
+
+#about_me{
+    padding-top:5%;
+    background-image:linear-gradient(rgba(0,0,0,0.5), 
+                                     rgba(0,0,0,0.5)), url(MK.jpg);
+}
+
+/* Styling for Projects Section */
+.project_title, .project_subheader, .project_desc, button{
+ /*   margin-left:2%; */
+}
+
+#projects{
+    background-color: #0E0B16;  /* burlywood */
+    width:100%;
+}
+
+.project_pic{
+    float:left;
+    display:inline;
+    margin:0 120px 50px 120px;
+    border-radius: 3%;
+}
+
+.project_name, .project_subheader, .project_description{
+    margin-right:20px;
+    text-align: justify;
+}
+
+button{
+    background-color:#000;
+    color:white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 18%;
+    cursor:pointer;
+    margin-bottom: 150px;
+}
+
+/* Styling for Contact Me Section */
+#contact_me{
+    background-color: #A239CA;  /* darkgoldenrod */
+    width:100%;
+    text-align:center;
+    padding-bottom: 30px;
+}
+
+#email{
+    color:#fff;
+}
+
+#email:hover{
+    color:#000;
+}
+
+.acc_img{
+    margin: 0 10px 0 10px;
+}
+
+.acc_link{
+    color:#000;
+}
+
+.acc_img:hover{
+    width:55px;
+}
+
+
+/* Footer */
+#footer{
+    width:100%;
+    display:block;
+    text-align: center;
+}
+
+#footer_text{
+    color:black;
+}
+
+/* Media Queries for Responsive Design Here */
+
+/* Shared settings for Smartphones in Portrait Orientation */
+@media only screen and (max-width:414px) and (min-width:320px){
+    .sub_section{
+        max-width:100%;
+    }
+    
+    .site_header{
+        width:100%;
+        position:absolute;
+    }
+    
+    .nav_bar{
+        float:none;
+        text-align: left;
+    }
+    
+    #about_me{
+        padding-top:15%;
+    }
+    
+    .about_me_name{
+        margin:5px auto 0px auto;
+    }
+    
+    .about_me_text{
+        width:80%;
+        margin: 0 auto;
+        text-align: justify;
+    }
+    
+    li{
+        float:none;
+        border: 2px solid black;
+        
+    }
+    
+    .logo{
+        text-align: center;
+        max-width:100%;
+        margin: 0 auto;
+        display: block;
+    }
+    
+    
+    .project_pic{
+        float:none;
+        max-width: 80%;
+        display:block;
+        margin: 0 auto;
+    }
+    
+    .project_name, .project_subheader, .project_description{
+        text-align:center;
+        margin: 0 auto 4px;
+    }
+    
+    .project_description{
+        width:90%;
+    }
+    
+    button{
+        display:block;
+        margin:0 auto;
+    }
+    
+    #footer_text{
+        font-size: 12px;
+    }
+}
+
+/* Smartphones Portrait Orientation (Bigger Displays) */
+@media only screen and (max-width:414px) and (min-width:361px){
+    
+    #about_me{
+        padding-top:15%;
+    }
+    
+    .about_me_name{
+        font-size: 25px;
+        margin:5px auto 0px auto;
+    }
+    
+    .about_me_title{
+        font-size: 15px;
+    }
+    
+    .about_me_text{
+        margin-bottom: 8px;
+        font-size: 20px;
+    }
+    
+    li{
+        margin: 0 10px 0 10px;
+        padding: 5px;
+    }
+    
+    .logo{
+        font-size:32px;
+    }
+    
+    
+    .project_pic{
+        float:none;
+        max-width: 80%;
+        display:block;
+        margin: 0 auto;
+    }
+    
+    .project_name, .project_subheader, .project_description{
+        text-align:center;
+        margin: 0 auto 4px;
+    }
+    
+    .project_description{
+        width:90%;
+    }
+    
+    button{
+        margin-bottom: 10px;
+    }
+    
+    .contact_info{
+        margin-bottom: 10px;
+    }
+    
+    .acc_img{
+        margin-bottom: 0px;
+    }
+    
+    #footer_text{
+        font-size: 12px;
+    }
+}
+
+/* Smartphones Portrait Orientation (Smaller Displays) */
+@media only screen and (max-width:360px) and (min-width:314px){
+    #about_me{
+        padding-top:15%;
+    }
+    
+    .about_me_name{
+        font-size: 25px;
+        margin:5px auto 0px auto;
+    }
+    
+    .about_me_title{
+        font-size: 15px;
+    }
+    
+    .about_me_text{
+        margin:0 auto 8px;
+        font-size: 15px;
+    }
+    
+    .logo{
+        font-size:24px;
+    }
+    
+    li{
+        font-size: 12px;
+        margin: 0 1px 0 1px;
+        padding: 5px;
+    }
+    
+    .project_pic{
+        float:none;
+        max-width: 80%;
+        display:block;
+        margin: 0 auto;
+    }
+    
+    .project_name, .project_subheader, .project_description{
+        text-align:center;
+        margin: 0 auto 4px;
+    }
+    
+    .project_description{
+        width:90%;
+    }
+    
+    button{
+        margin-bottom: 10px;
+    }
+    
+    .contact_info{
+        margin:0 auto 7px;
+    }
+    
+    .acc_img{
+        margin-bottom: 0px;
+    }
+    
+    #footer_text{
+        font-size: 10px;
+    }
+}
+
+/* Smartphones Landscape Orientation */
+@media only screen and (max-width:736px) and (min-width:415px) {
+    .sub_section{
+        max-width: 100%;
+    }
+    
+    .project_name, .project_subheader, .project_description{
+        text-align: center;
+    }
+    
+    #about_me{
+        padding-top: 10%;
+    }
+    
+    .about_me_text, .project_description{
+        width:80%;
+        margin:0 auto;
+    }
+    
+    .project_pic{
+        max-width: 100%;
+        margin:0 120px 22px 120px;
+    }
+    
+    .logo{
+        font-size: 35px;
+        width: 100%;
+        text-align: center;
+        margin: 0 auto;
+        display:block;
+    }
+    
+    .nav_bar{
+        float:none;
+        max-width: 100%;
+    }
+    
+    li{
+        margin: 0 60px 0 60px;
+        padding: 3px;
+        border: 2px solid #E7DFDD;
+    }
+    
+    button{
+        display: block;
+        margin:5px auto 5px auto;
+    }
+} 
