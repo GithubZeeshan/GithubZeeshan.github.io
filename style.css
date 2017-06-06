@@ -59,8 +59,8 @@ li{
 
 #about_me{
     padding-top:5%;
-    background-image:linear-gradient(rgba(0,0,0,0.5), 
-                                     rgba(0,0,0,0.5)), url(MK.jpg);
+    background-image:linear-gradient(rgba(0,0,0,0.7), 
+                                     rgba(0,0,0,0.7)), url(assets/MK.jpg);
 }
 
 /* Styling for Projects Section */
