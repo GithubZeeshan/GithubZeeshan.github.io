@@ -11,7 +11,7 @@ li, h1, h2, h3, h4, p, form{
 }
 
 /* Site Header and Navigation Bar Styling here */
-.site_header{
+header{
     width:100%;
     background-color:#0E0B16;
     position:fixed;
@@ -23,7 +23,7 @@ li, h1, h2, h3, h4, p, form{
     display:inline;
 }
 
-.nav_bar{
+nav{
     float:right;
 }
 
@@ -125,7 +125,7 @@ button{
 
 
 /* Footer */
-#footer{
+footer{
     width:100%;
     display:block;
     text-align: center;
@@ -143,12 +143,12 @@ button{
         max-width:100%;
     }
     
-    .site_header{
+    header{
         width:100%;
         position:absolute;
     }
     
-    .nav_bar{
+    nav{
         float:none;
         text-align: left;
     }
@@ -169,8 +169,7 @@ button{
     
     li{
         float:none;
-        border: 2px solid black;
-        
+        border: 2px solid #E7DFDD;
     }
     
     .logo{
@@ -229,14 +228,15 @@ button{
     }
     
     li{
-        margin: 0 10px 0 10px;
-        padding: 5px;
+        margin: 0 auto 0 auto;
+        text-align: center;
+        margin: 0 8px 0 8px;
+        padding: 0px; 
     }
     
     .logo{
-        font-size:32px;
+        font-size:1.3em;
     }
-    
     
     .project_pic{
         float:none;
@@ -334,10 +334,10 @@ button{
     }
 }
 
-/* Smartphones Landscape Orientation */
-@media only screen and (max-width:736px) and (min-width:415px) {
+/* Shared settings for Smartphones in Landscape Orientation */
+@media only screen and (max-width:736px) and (min-width:500px) {
     .sub_section{
-        max-width: 100%;
+        width: 100%;
     }
     
     .project_name, .project_subheader, .project_description{
@@ -354,8 +354,10 @@ button{
     }
     
     .project_pic{
-        max-width: 100%;
-        margin:0 120px 22px 120px;
+        max-width: 100;
+        display: block;
+        margin: 0 auto;
+        margin:0 120px 22px 120px; 
     }
     
     .logo{
@@ -366,7 +368,7 @@ button{
         display:block;
     }
     
-    .nav_bar{
+    nav{
         float:none;
         max-width: 100%;
     }
@@ -381,4 +383,21 @@ button{
         display: block;
         margin:5px auto 5px auto;
     }
-} 
+}  
+
+/* Smartphones Landscape Orientation (Smaller Displays)
+@media only screen and (max-width:640px) and (min-width:416px){
+    .project_pic{
+        max-width: 80%;
+        margin: 0 50px 0 50px;
+        display:block;
+    }
+    
+    ul{
+        width:100%;
+    }
+    
+    li{
+        margin:0 35px;
+    }
+}
