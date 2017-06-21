@@ -350,14 +350,14 @@ footer{
     
     .about_me_text, .project_description{
         width:80%;
-        margin:0 auto;
+        margin:0 auto 10px;
     }
     
     .project_pic{
-        max-width: 100%;
+        max-width: 80%;
+        float:none;
         display: block;
-        margin: 0 auto;
-        margin:0 120px 22px 120px; 
+        margin:10px auto 22px auto;                    
     }
     
     .logo{
@@ -387,12 +387,6 @@ footer{
 
 /* Smartphones Landscape Orientation (Smaller Displays) */
 @media only screen and (max-width:640px) and (min-width:416px){
-    .project_pic{
-        max-width: 80%;
-        margin: 0 50px 0 50px;
-        display:block;
-    }
-    
     ul{
         width:100%;
     }
